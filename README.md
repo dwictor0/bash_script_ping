@@ -13,7 +13,7 @@ utilize apenas o começo do endereço ip ele testará de .1 a .254 ,  o script e
 Causa: O hping3 não está instalado.  
 Solução: Instale com o seguinte comando: 
 ```bash
-sudo apt-get install hping
+sudo apt-get install hping3
 ```
 ### 2. Sintaxe incorreta / parâmetro ausente
 Solução: O script mostrará automaticamente:
