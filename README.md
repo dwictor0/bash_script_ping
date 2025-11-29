@@ -3,7 +3,7 @@ Este script em Bash realiza um ping scan utilizando o hping3 para verificar host
 
 ## Uso
 ```bash
-sudo ./portscan.sh <endereco_ip>
+sudo ./script_ping.sh <endereco_ip>
 ```
 utilize apenas o começo do endereço ip ele testará de .1 a .254 ,  o script exibirá os IPs ativos que responderem na porta 80.  
 
@@ -19,8 +19,8 @@ sudo apt-get install hping
 Solução: O script mostrará automaticamente:
 >
 >SCRIPT - PING SCAN  
->Modo de uso - ./portscan.sh (endereco ip)  
->Exemplo ./portscan.sh 192.168.0
+>Modo de uso - ./script_ping.sh (endereco ip)  
+>Exemplo ./script_ping.sh 192.168.0
 >
 
 ## Changelog
