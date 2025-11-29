@@ -1,9 +1,10 @@
 #!/bin/bash
-if [ -z "$1" ]
+if [[ -z "$1" && "$EUID" -ne 0 ]];
 then 
    echo "SCRIPT - PING SCAN"
-   echo "Modo de uso - $0 (endereco ip)"
-   echo "Exemplo ./$0 192.168.xx"
+   echo "[!] É necessário executar como root (sudo)"
+   echo "[!] Modo de uso - sudo $0 (endereco ip)"
+   echo "[!] Exemplo - sudo $0 192.168.xx"
 else
 for host in $(seq 1 254)
 do
