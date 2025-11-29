@@ -7,7 +7,7 @@ then
 else
 for host in $(seq 1 254)
 do
-ping -c 1 $1.$host | grep "64 bytes" | cut -d " " -f 4
+hping3 -S -p 80 -c  1 $1.$host 2> /dev/null | grep "flags=SA" | cut -d " " -f 2 | cut -d "=" -f 2;
 done
 fi 
 
