@@ -7,7 +7,7 @@ then
 else
 for host in $(seq 1 254)
 do
-ping -c 1 $1,$host | grep "64 bytes" | cut -d " " -f 4
+ping -c 1 $1.$host | grep "64 bytes" | cut -d " " -f 4
 done
 fi 
 
